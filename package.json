@@ -1,0 +1,15 @@
+{
+    "name": "esp8266_rtos_sdk",
+    "version": "3.2",
+    "description": "ESP8266_RTOS_SDK",
+    "keywords": [
+      "ESP8266 IDF SDK",
+      "ESP8266"
+    ],
+    "homepage": "https://github.com/FastEmbedded/ESP8266_RTOS_SDK",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/FastEmbedded/ESP8266_RTOS_SDK.git"
+    }
+  }
