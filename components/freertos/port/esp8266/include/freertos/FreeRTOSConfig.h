@@ -73,6 +73,7 @@
 #define INCLUDE_xTimerGetTimerDaemonTaskHandle 1
 
 #define configCHECK_FOR_STACK_OVERFLOW  2
+#define configUSE_TRACE_FACILITY     1
 #define configUSE_MUTEXES  1
 #define configUSE_RECURSIVE_MUTEXES  1
 #define configUSE_COUNTING_SEMAPHORES   1
@@ -98,6 +99,8 @@ to exclude the API function. */
 #define INCLUDE_vTaskSuspend			1
 #define INCLUDE_vTaskDelayUntil			1
 #define INCLUDE_vTaskDelay				1
+#define INCLUDE_pcTaskGetTaskName           1
+#define INCLUDE_xTimerPendFunctionCall      1
 
 /*set the #define for debug info*/
 #define INCLUDE_xTaskGetCurrentTaskHandle 1
@@ -123,9 +126,9 @@ NVIC value of 255. */
 #endif
 
 #ifdef CONFIG_ENABLE_PTHREAD
-#define configNUM_THREAD_LOCAL_STORAGE_POINTERS 2
+#define configNUM_THREAD_LOCAL_STORAGE_POINTERS 3
 #else
-#define configNUM_THREAD_LOCAL_STORAGE_POINTERS 1
+#define configNUM_THREAD_LOCAL_STORAGE_POINTERS 2
 #endif
 #define configTHREAD_LOCAL_STORAGE_DELETE_CALLBACKS 1
 
